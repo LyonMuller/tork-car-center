@@ -2,6 +2,7 @@ import React from 'react';
 import { Clock, MapPin, Phone, Car, ArrowUp } from 'lucide-react';
 import { ADDRESS_TEXT, HOURS_TEXT, WHATSAPP_FORMATTED, getWhatsAppLink, GOOGLE_MAPS_LINK } from '../data';
 import WhatsAppIcon from './WhatsAppIcon';
+import LyonDevLogo from './LyonDevLogo';
 
 export default function Footer() {
   const handleBackToTop = (e: React.MouseEvent) => {
@@ -98,7 +99,20 @@ export default function Footer() {
 
         {/* Footer bottom */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[10px] font-mono text-neutral-550 uppercase tracking-wider">
-          <p>© {currentYear} Tork Car Center Joinville. Todos os direitos reservados.</p>
+          <p className="text-center sm:text-left">
+            © {currentYear} Tork Car Center Joinville. Todos os direitos reservados.
+            <span className="text-neutral-600 mx-2">·</span>
+            Desenvolvido por{' '}
+            <a
+              href="https://lyon.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-neutral-500 hover:text-[#dc2626] transition-colors duration-200 normal-case"
+            >
+              <LyonDevLogo className="h-3.5 w-auto" />
+              lyon.dev
+            </a>
+          </p>
           <div className="flex items-center gap-4">
             <span>Atendimento prático e sem enrolações</span>
             <button
