@@ -1,0 +1,6 @@
+{
+  "name": "Tork Car Center",
+  "description": "Premium automotive center in Joinville specializing in mechanics, air conditioning, electrical diagnostic, and professional car detailing with smooth, practical service.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
