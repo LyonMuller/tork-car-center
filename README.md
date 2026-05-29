@@ -47,12 +47,14 @@ URL alternativa do GitHub: **https://lyonmuller.github.io/tork-car-center/**
 ### Testar o build local (como no Pages)
 
 ```bash
-VITE_BASE=/tork-car-center/ VITE_SITE_URL=https://lyonmuller.github.io npm run build
+npm run build
 npm run preview
 ```
 
-Abra a URL que o `preview` indicar (assets usam o subcaminho `/tork-car-center/`).
+Produção usa `VITE_BASE=/` e `https://tork.lyon.dev` (ver [`public/CNAME`](public/CNAME) e o workflow).
 
-### Domínio customizado
+Sem domínio customizado (só `github.io/repo`):
 
-Se usar domínio próprio, atualize `VITE_SITE_URL` no workflow e nas variáveis de ambiente, e configure o domínio em **Settings → Pages**.
+```bash
+VITE_BASE=/tork-car-center/ VITE_SITE_URL=https://lyonmuller.github.io npm run build
+```
