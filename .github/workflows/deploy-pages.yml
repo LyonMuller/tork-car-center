@@ -33,8 +33,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE: /tork-car-center/
-          VITE_SITE_URL: https://lyonmuller.github.io
+          # Domínio customizado configurado no GitHub Pages (Settings → Pages).
+          VITE_BASE: /
+          VITE_SITE_URL: https://tork.lyon.dev
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -3,13 +3,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig, loadEnv} from 'vite';
 
-/** GitHub Pages project site: https://<user>.github.io/<repo>/ */
-const defaultGithubPagesBase = '/tork-car-center/';
-
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const base = env.VITE_BASE || (mode === 'production' ? defaultGithubPagesBase : '/');
-  const siteUrl = (env.VITE_SITE_URL || 'https://lyonmuller.github.io').replace(/\/$/, '');
+  const base = env.VITE_BASE || '/';
+  const siteUrl = (env.VITE_SITE_URL || 'https://tork.lyon.dev').replace(/\/$/, '');
   const ogImage = `${siteUrl}${base.replace(/\/$/, '')}/images/hero_workshop_1780023233615.png`;
 
   return {

@@ -33,7 +33,9 @@ Copie `.env.example` para `.env` se precisar customizar `VITE_SITE_URL` ou `VITE
 
 O repositório inclui o workflow [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml). A cada push na branch `main`, o site é publicado em:
 
-**https://lyonmuller.github.io/tork-car-center/**
+**https://tork.lyon.dev** (domínio customizado)
+
+URL alternativa do GitHub: **https://lyonmuller.github.io/tork-car-center/**
 
 ### Primeira vez (no GitHub)
 
