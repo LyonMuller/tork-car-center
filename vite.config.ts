@@ -7,7 +7,7 @@ export default defineConfig(({mode}) => {
   const env = loadEnv(mode, process.cwd(), '');
   const base = env.VITE_BASE || '/';
   const siteUrl = (env.VITE_SITE_URL || 'https://tork.lyon.dev').replace(/\/$/, '');
-  const ogImage = `${siteUrl}${base.replace(/\/$/, '')}/images/hero_workshop_1780023233615.png`;
+  const ogImage = `${siteUrl}${base.replace(/\/$/, '')}/images/og-image.jpg`;
 
   return {
     base,
