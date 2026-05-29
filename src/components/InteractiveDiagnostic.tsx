@@ -94,7 +94,7 @@ export default function InteractiveDiagnostic() {
           <h2 className="text-3xl md:text-5xl font-display font-black text-white mt-4 uppercase italic tracking-tighter">
             Seu carro precisa de atenção?
           </h2>
-          <p className="text-neutral-450 mt-3 text-sm">
+          <p className="text-neutral-400 mt-3 text-sm">
             Selecione as falhas ou serviços desejados abaixo para gerar um resumo imediato e encaminhar diretamente para a nossa equipe no WhatsApp.
           </p>
         </div>
@@ -194,7 +194,7 @@ export default function InteractiveDiagnostic() {
               {totalCount === 0 ? (
                 <div className="flex flex-col items-center justify-center py-6 text-center text-neutral-505">
                   <AlertTriangle className="h-8 w-8 text-neutral-700 mb-2 stroke-[1.5]" />
-                  <p className="text-xs font-bold uppercase tracking-wider text-neutral-450">Nenhum sintoma selecionado ainda</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-neutral-400">Nenhum sintoma selecionado ainda</p>
                   <p className="text-[11px] text-neutral-600 mt-1 max-w-[200px] mx-auto font-sans leading-relaxed">
                     Navegue pelas abas e marque os problemas que deseja corrigir.
                   </p>

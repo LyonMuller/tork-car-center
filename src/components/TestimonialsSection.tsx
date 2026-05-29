@@ -26,7 +26,7 @@ export default function TestimonialsSection() {
           <h2 className="text-3xl md:text-5xl font-display font-black text-white uppercase italic tracking-tighter">
             O que nossos clientes dizem
           </h2>
-          <p className="text-neutral-450 mt-3 text-sm font-sans">
+          <p className="text-neutral-400 mt-3 text-sm font-sans">
             A satisfação e a tranquilidade de quem traz o carro para a Tork Car Center em Joinville é o nosso principal objetivo.
           </p>
         </div>

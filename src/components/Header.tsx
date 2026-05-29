@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Menu, X, Car, MessageSquareCode } from 'lucide-react';
+import { Phone, Menu, X, Car } from 'lucide-react';
 import { getWhatsAppLink, WHATSAPP_FORMATTED } from '../data';
 import WhatsAppIcon from './WhatsAppIcon';
 
@@ -21,6 +21,7 @@ export default function Header() {
     { label: 'Diferenciais', href: '#diferenciais' },
     { label: 'Sintomas', href: '#sintomas' },
     { label: 'Como Funciona', href: '#funcionamento' },
+    { label: 'Depoimentos', href: '#depoimentos' },
     { label: 'Localização', href: '#localizacao' },
     { label: 'FAQ', href: '#faq' },
   ];
@@ -185,7 +186,7 @@ export default function Header() {
                 </button>
               ))}
               <div className="pt-4 px-2 flex flex-col gap-3">
-                <div className="flex items-center gap-2 text-xs text-neutral-450 py-1.5 font-mono">
+                <div className="flex items-center gap-2 text-xs text-neutral-400 py-1.5 font-mono">
                   <WhatsAppIcon className="h-4 w-4 text-[#25D366] shrink-0 fill-current" />
                   <span>{WHATSAPP_FORMATTED}</span>
                 </div>

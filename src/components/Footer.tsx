@@ -12,7 +12,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-neutral-950 border-t border-neutral-900 pt-16 pb-8 text-neutral-450 relative">
+    <footer className="bg-neutral-950 border-t border-neutral-900 pt-16 pb-8 text-neutral-400 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-neutral-900">
@@ -51,6 +51,9 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#funcionamento" className="hover:text-[#dc2626] transition-colors duration-200">Como Trabalhamos</a>
+              </li>
+              <li>
+                <a href="#depoimentos" className="hover:text-[#dc2626] transition-colors duration-200">Depoimentos</a>
               </li>
               <li>
                 <a href="#localizacao" className="hover:text-[#dc2626] transition-colors duration-200">Localização</a>

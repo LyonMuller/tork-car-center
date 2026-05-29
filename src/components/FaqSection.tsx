@@ -23,7 +23,7 @@ export default function FaqSection() {
           <h2 className="text-3xl md:text-5xl font-display font-black text-white mt-4 uppercase italic tracking-tighter">
             Perguntas Frequentes
           </h2>
-          <p className="text-neutral-450 mt-3 text-sm">
+          <p className="text-neutral-400 mt-3 text-sm">
             Encontre respostas diretas sobre os nossos serviços, localização em Joinville e formas de agendamento na Tork Car Center.
           </p>
         </div>

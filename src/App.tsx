@@ -38,6 +38,7 @@ import {
   getWhatsAppLink,
   GOOGLE_MAPS_LINK
 } from './data';
+import { IMAGES } from './images';
 
 export default function App() {
   const getServiceIcon = (iconName: string, className: string) => {
@@ -79,7 +80,7 @@ export default function App() {
         {/* Visual background image representing high-fidelity workshop */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/src/assets/images/hero_workshop_1780023233615.png"
+            src={IMAGES.heroWorkshop}
             alt="Tork Car Center Joinville Workshop"
             className="w-full h-full object-cover object-center opacity-25 transform scale-102 filter brightness-50"
             referrerPolicy="no-referrer"
@@ -117,7 +118,7 @@ export default function App() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="text-base sm:text-lg text-neutral-450 leading-relaxed max-w-xl font-sans italic"
+                className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-xl font-sans italic"
               >
                 Mecânica, ar-condicionado, elétrica e estética automotiva com atendimento prático, comunicação clara e foco em resolver o problema do seu carro sem complicação.
               </motion.p>
@@ -158,7 +159,7 @@ export default function App() {
                   href={GOOGLE_MAPS_LINK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-2.5 p-3 rounded-sm bg-neutral-900 border border-neutral-800 hover:border-red-650/30 transition-colors"
+                  className="flex items-start gap-2.5 p-3 rounded-sm bg-neutral-900 border border-neutral-800 hover:border-red-600/30 transition-colors"
                 >
                   <MapPin className="h-4 w-4 text-red-500 shrink-0" />
                   <span>Petrópolis, R. São Paulo, 4619</span>
@@ -171,7 +172,7 @@ export default function App() {
                   href={getWhatsAppLink()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-2.5 p-3 rounded-sm bg-neutral-900 border border-neutral-800 hover:border-red-650/30 transition-colors"
+                  className="flex items-start gap-2.5 p-3 rounded-sm bg-neutral-900 border border-neutral-800 hover:border-red-600/30 transition-colors"
                 >
                   <WhatsAppIcon className="h-4 w-4 text-[#25D366] shrink-0 fill-current" />
                   <span>WhatsApp: {WHATSAPP_FORMATTED}</span>
@@ -194,7 +195,7 @@ export default function App() {
                   T
                 </div>
                 <h3 className="text-base font-bold uppercase tracking-wider text-white">Nossa Promessa</h3>
-                <p className="text-neutral-450 text-xs mt-3 leading-relaxed font-sans">
+                <p className="text-neutral-400 text-xs mt-3 leading-relaxed font-sans">
                   Instalação certificada e excelência automotiva na região de Joinville com clareza comercial, agilidade pontual e profissionais prontos para diagnosticar e resolver falhas sem enrolações.
                 </p>
                 <div className="mt-8 pt-6 border-t border-neutral-800 flex items-center justify-between text-[10px] font-mono tracking-widest uppercase">
@@ -216,7 +217,7 @@ export default function App() {
             <div className="lg:col-span-5">
               <div className="relative rounded-sm overflow-hidden shadow-2xl border border-neutral-800">
                 <img
-                  src="/src/assets/images/detailing_service_1780023254744.png"
+                  src={IMAGES.detailingService}
                   alt="Tork Car Center detailing"
                   className="w-full h-auto object-cover aspect-[4/3] hover:scale-102 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -302,7 +303,7 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-display font-black text-white uppercase italic tracking-tighter">
               A solução do seu carro em um lugar
             </h2>
-            <p className="text-neutral-450 mt-3 text-sm">
+            <p className="text-neutral-400 mt-3 text-sm">
               A Tork Car Center oferece atendimento automotivo pensado para quem busca praticidade, cuidado e mais tranquilidade na hora de resolver o que seu veículo precisa.
             </p>
           </div>
@@ -383,7 +384,7 @@ export default function App() {
             {DIFFERENTIALS_DATA.map((diff, index) => (
               <div
                 key={diff.id}
-                className="bg-neutral-900 border border-neutral-800/80 rounded-sm p-6 hover:border-red-650/40 transition-all duration-300 flex flex-col justify-between group"
+                className="bg-neutral-900 border border-neutral-800/80 rounded-sm p-6 hover:border-red-600/40 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   <div className="h-10 w-10 rounded-sm bg-[#dc2626]/5 border border-[#dc2626]/20 text-[#dc2626] flex items-center justify-center group-hover:bg-[#dc2626] group-hover:text-white transition-colors duration-300">
@@ -395,9 +396,6 @@ export default function App() {
                   <p className="text-xs text-neutral-400 mt-2.5 leading-relaxed font-sans">
                     {diff.description}
                   </p>
-                </div>
-                <div className="text-[9px] font-mono text-neutral-600 mt-6 tracking-widest uppercase">
-                  Tork Diff_0{index + 1}
                 </div>
               </div>
             ))}
@@ -439,7 +437,7 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-display font-black text-white mt-4 uppercase italic tracking-tighter">
               Veja como é simples cuidar de seu carro com a Tork Car Center
             </h2>
-            <p className="text-neutral-450 mt-3 text-sm">
+            <p className="text-neutral-400 mt-3 text-sm">
               Nosso processo é desenhado em quatro etapas descomplicadas para poupar seu tempo.
             </p>
           </div>
@@ -585,7 +583,7 @@ export default function App() {
             <h2 className="text-3xl md:text-5xl font-display font-black text-white italic uppercase tracking-tighter">
               Seu carro merece praticidade, cuidado e solução.
             </h2>
-            <p className="text-neutral-450 mt-3 text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
+            <p className="text-neutral-400 mt-3 text-xs md:text-sm max-w-xl mx-auto leading-relaxed">
               Na Tork Car Center, você encontra atendimento automotivo em um só lugar para resolver com mais facilidade o que o seu veículo precisa.
             </p>
           </div>

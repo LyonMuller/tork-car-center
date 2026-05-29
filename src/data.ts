@@ -1,4 +1,5 @@
 import { ServiceItem, DifferentialItem, StepItem, FaqItem, TestimonialItem } from './types';
+import { IMAGES } from './images';
 
 export const WHATSAPP_NUMBER = "+5547988249993";
 export const WHATSAPP_FORMATTED = "+55 47 98824-9993";
@@ -29,7 +30,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description: "Manutenção e reparos para melhorar segurança, funcionamento e desempenho.",
     longDescription: "Cuidamos de freios, suspensão, embreagem, correias, motor e transmissão. Realizamos manutenções preventivas e corretivas completas para garantir que você dirija com total segurança na estrada ou na cidade.",
     iconName: "Wrench",
-    imageUrl: "/src/assets/images/diagnostic_engine_1780023274732.png", // Holds modern mechanic visual
+    imageUrl: IMAGES.diagnosticEngine,
     symptoms: [
       "Barulho estranho ao frear ou acelerar",
       "Pedal de freio baixo, mole ou duro demais",
@@ -45,7 +46,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description: "Mais conforto para dirigir com o sistema funcionando da forma certa.",
     longDescription: "Higienização completa, recarga de gás refrigerante, troca do filtro de cabine e reparo de compressores, tubulações e vazamentos. Dirija no clima ideal, respirando um ar limpo e livre de bactérias.",
     iconName: "Wind",
-    imageUrl: "/src/assets/images/hero_workshop_1780023233615.png", // Backup workshop high-quality
+    imageUrl: IMAGES.heroWorkshop,
     symptoms: [
       "Ar-condicionado simplesmente não gela",
       "Vento muito fraco saindo dos difusores",
@@ -60,7 +61,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     description: "Diagnóstico e correção de falhas para evitar transtornos e manter o carro confiável.",
     longDescription: "Diagnósticos computadorizados com scanner automotivo de última geração. Solucionamos problemas de baterias, alternadores, motores de partida, chicotes elétricos, iluminação e acessórios eletrônicos.",
     iconName: "Zap",
-    imageUrl: "/src/assets/images/diagnostic_engine_1780023274732.png", // Holds diagnostics
+    imageUrl: IMAGES.diagnosticEngine,
     symptoms: [
       "Bateria descarregando com frequência",
       "Faróis, setas ou lanternas que queimam repetidamente",
@@ -73,9 +74,9 @@ export const SERVICES_DATA: ServiceItem[] = [
     id: "estetica",
     title: "Estética automotiva",
     description: "Mais cuidado com a aparência, valorização e apresentação do seu veículo.",
-    longDescription: "Lavagem técnica detalhada detalhada de chassi e motor, polimento comercial/técnico com eliminação de riscos superficiais, higienização interna profunda dos estofados e teto, e revitalização de plásticos e borrachas.",
+    longDescription: "Lavagem técnica detalhada de chassi e motor, polimento comercial/técnico com eliminação de riscos superficiais, higienização interna profunda dos estofados e teto, e revitalização de plásticos e borrachas.",
     iconName: "Sparkles",
-    imageUrl: "/src/assets/images/detailing_service_1780023254744.png", // Detail shop focus
+    imageUrl: IMAGES.detailingService,
     symptoms: [
       "Pintura opaca, sem brilho ou com micro-riscos",
       "Tecido/couro dos bancos manchado ou com poeira encruada",
@@ -183,7 +184,6 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Proprietário de Mitsubishi Outlander",
     quote: "Excelente serviço no ar-condicionado e na parte elétrica. Meu Outlander voltou a gelar perfeitamente. O atendimento foi muito ágil, direto ao ponto e com preço justo.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=120&auto=format&fit=crop",
     avatarFallback: "MA"
   },
   {
@@ -192,7 +192,6 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Proprietária de Honda Civic",
     quote: "Levei meu Civic para fazer revisão de freios e também polimento de pintura. É incrível poder resolver mecânica e estética em um só lugar sem dor de cabeça. Serviço impecável.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=120&auto=format&fit=crop",
     avatarFallback: "RS"
   },
   {
@@ -201,7 +200,6 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Proprietário de VW Nivus",
     quote: "Finalmente uma oficina honesta e transparente em Joinville. Fizeram o diagnóstico eletrônico rápido com scanner de última geração e resolveram o problema elétrico que outras duas oficinas não acharam.",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=120&auto=format&fit=crop",
     avatarFallback: "CV"
   },
   {
@@ -210,7 +208,6 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     role: "Proprietária de Jeep Compass",
     quote: "Amei a praticidade de usar o diagnóstico do site e agendar pelo WhatsApp. O pessoal é extremamente atencioso e o retorno do orçamento foi muito rápido. Indico de olhos fechados!",
     rating: 5,
-    avatarUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=120&auto=format&fit=crop",
     avatarFallback: "MR"
   }
 ];
